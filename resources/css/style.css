@@ -1,0 +1,175 @@
+@font-face { 
+    font-family: "Open sans";
+    src: url(../fonts/open-sans/OpenSans-Regular.ttf)format("truetype");
+}
+ /* Universal rules */
+html {
+    font-size: 16px;
+    width: 1349px;
+}
+
+h1,
+h2,
+h3,
+h4,
+a,
+p,
+nav,
+table,
+.copyright {
+    font-family: "Open sans", sans-serif;
+}
+ /* Header Section */
+header {
+ position: fixed;
+ z-index: 100;
+ width:100%;
+ background-color: white; 
+}
+
+header .header-content {
+    display: flex;
+    align-items: center;
+    padding: 1rem;
+    margin-top: 0rem;    
+}
+
+.nav-menu {
+    float: right;
+    margin: 0;
+    padding: 1.5rem 1.5rem;
+    margin: 0 3rem;
+    display: inline-flex;
+}
+
+.nav-menu ul {
+    padding-right: 3rem;
+    margin-right: 3rem;
+}
+
+.nav-menu li {    
+    display: inline-block;
+    text-align: right;
+    margin-left: 0.5rem;
+    text-transform: uppercase;
+    font-weight: 900; 
+    font-size: 1.25rem;
+    letter-spacing: 0.1rem;
+}
+
+.nav-menu a {
+    color: black;
+    text-decoration: none;
+    padding: 0.2rem 0.9rem;
+}
+
+.logo {
+    height: 6rem;
+    width: 6rem;
+    background-image: url("../images/Cala\ Gonone\ Apartments\ logo.png");
+    background-size: contain;
+    background-repeat: no-repeat;
+    display: inline-block;
+    position: relative;
+    top: 0.5rem;
+    left: 4.5rem;    
+}
+
+li a:hover {
+    background-color: #003580;
+    color: white;
+}
+
+@media only screen and (min-width: 895px) {
+    header .header-mobile {
+      display: none;
+    }
+}
+
+@media only screen and (max-width: 720px) {
+    .header-content .nav-menu {
+        display: none;        
+    }
+}
+
+@media only screen and (max-width: 720px) {
+    .logo {
+        display: none;        
+    }
+}
+
+@media only screen and (max-width: 720px) {
+    li {
+        display: inline-block;
+        text-decoration: none; 
+        padding: 0.5rem 3.5rem;             
+    }
+}
+
+@media only screen and (max-width: 720px) {
+    ul {
+        padding: 0;
+        line-height: 10rem;             
+    }
+}
+
+@media only screen and (max-width: 720px) {
+    nav {
+        text-align: center; 
+        align-items: center;
+        justify-content: center;
+        vertical-align: middle;                   
+    }
+}
+
+@media only screen and (max-width: 720px) {
+    .header-mobile i {
+        position: relative;
+        bottom: 3.5rem;           
+    }
+}
+
+@media only screen and (max-width: 720px) {
+    .header-content {
+        width: 100%;
+    }
+}
+
+/* Page Tittle Section */
+
+.page-title {
+    background-color: #003580;
+    color: white;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+    height: 5rem;
+    display: flex;
+    font-weight: bold;
+    letter-spacing: 0.4rem;
+    z-index: 5;
+}
+
+@media only screen and (max-width: 720px) {
+    .page-title {
+        height: 10rem;
+        width: auto;
+        display: flex;
+        flex-shrink: inherit;
+        text-align: center;
+        justify-content: center;
+        font-size: 2.5rem;
+    }
+}
+
+
+
+
+/* Banner Section */
+
+.img-banner img {
+    height: 18rem;
+    width: 100%;
+    display: block;
+} 
+
